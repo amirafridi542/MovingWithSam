@@ -1,0 +1,6 @@
+framework module Pods_Moving_With_Sam {
+  umbrella header "Pods-Moving With Sam-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446231CB435A519D53AFC113 /* Pods_Moving_With_Sam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBC5CEB7D0CB8B3FDE1A795 /* Pods_Moving_With_Sam.framework */; };
 		EF4BB7C8259CDBD300867B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7C7259CDBD300867B95 /* AppDelegate.swift */; };
 		EF4BB7CA259CDBD300867B95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7C9259CDBD300867B95 /* SceneDelegate.swift */; };
 		EF4BB7CC259CDBD300867B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7CB259CDBD300867B95 /* ViewController.swift */; };
@@ -23,6 +24,9 @@
 		EF5A5040259D892E00310840 /* JobSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A503F259D892E00310840 /* JobSummaryVC.swift */; };
 		EF5A505A259DB57800310840 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A5059259DB57800310840 /* SideMenuVC.swift */; };
 		EF5A5066259DC4AC00310840 /* SignatureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A5065259DC4AC00310840 /* SignatureVC.swift */; };
+		EF5A5076259E355800310840 /* SwiftSignatureView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5A5075259E355800310840 /* SwiftSignatureView.framework */; };
+		EF5A5078259E355C00310840 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5A5077259E355C00310840 /* Alamofire.framework */; };
+		EF5A507A259E355F00310840 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5A5079259E355F00310840 /* AEXML.framework */; };
 		EF9B8F9C259D0A87002B6DE4 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B8F9B259D0A87002B6DE4 /* CurveView.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CBC5CEB7D0CB8B3FDE1A795 /* Pods_Moving_With_Sam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moving_With_Sam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D287F22D155842498B8EC48 /* Pods-Moving With Sam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moving With Sam.debug.xcconfig"; path = "Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam.debug.xcconfig"; sourceTree = "<group>"; };
+		B8B94721534350E7751321BD /* Pods-Moving With Sam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moving With Sam.release.xcconfig"; path = "Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam.release.xcconfig"; sourceTree = "<group>"; };
 		EF4BB7C4259CDBD300867B95 /* Moving With Sam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moving With Sam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BB7C7259CDBD300867B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF4BB7C9259CDBD300867B95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +73,9 @@
 		EF5A503F259D892E00310840 /* JobSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSummaryVC.swift; sourceTree = "<group>"; };
 		EF5A5059259DB57800310840 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		EF5A5065259DC4AC00310840 /* SignatureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureVC.swift; sourceTree = "<group>"; };
+		EF5A5075259E355800310840 /* SwiftSignatureView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftSignatureView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5A5077259E355C00310840 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5A5079259E355F00310840 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9B8F9B259D0A87002B6DE4 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5A507A259E355F00310840 /* AEXML.framework in Frameworks */,
+				EF5A5078259E355C00310840 /* Alamofire.framework in Frameworks */,
+				EF5A5076259E355800310840 /* SwiftSignatureView.framework in Frameworks */,
+				446231CB435A519D53AFC113 /* Pods_Moving_With_Sam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0441801EE92DC054131A96B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D287F22D155842498B8EC48 /* Pods-Moving With Sam.debug.xcconfig */,
+				B8B94721534350E7751321BD /* Pods-Moving With Sam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B7D2A4CF316A371567B9755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A5079259E355F00310840 /* AEXML.framework */,
+				EF5A5077259E355C00310840 /* Alamofire.framework */,
+				EF5A5075259E355800310840 /* SwiftSignatureView.framework */,
+				1CBC5CEB7D0CB8B3FDE1A795 /* Pods_Moving_With_Sam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF4BB7BB259CDBD300867B95 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +135,8 @@
 				EF4BB7DD259CDBD900867B95 /* Moving With SamTests */,
 				EF4BB7E8259CDBD900867B95 /* Moving With SamUITests */,
 				EF4BB7C5259CDBD300867B95 /* Products */,
+				0441801EE92DC054131A96B9 /* Pods */,
+				5B7D2A4CF316A371567B9755 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF4BB7EE259CDBD900867B95 /* Build configuration list for PBXNativeTarget "Moving With Sam" */;
 			buildPhases = (
+				5272BF4640488E11F858C5A7 /* [CP] Check Pods Manifest.lock */,
 				EF4BB7C0259CDBD300867B95 /* Sources */,
 				EF4BB7C1259CDBD300867B95 /* Frameworks */,
 				EF4BB7C2259CDBD300867B95 /* Resources */,
+				F9A25BFE3589E76A40BA8572 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +392,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5272BF4640488E11F858C5A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moving With Sam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A25BFE3589E76A40BA8572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF4BB7C0259CDBD300867B95 /* Sources */ = {
@@ -541,6 +621,7 @@
 		};
 		EF4BB7EF259CDBD900867B95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D287F22D155842498B8EC48 /* Pods-Moving With Sam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -559,6 +640,7 @@
 		};
 		EF4BB7F0259CDBD900867B95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B94721534350E7751321BD /* Pods-Moving With Sam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

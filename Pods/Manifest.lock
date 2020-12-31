@@ -1,0 +1,28 @@
+PODS:
+  - AEXML (4.6.0)
+  - Alamofire (4.9.1)
+  - IQKeyboardManager (6.5.6)
+  - SwiftSignatureView (3.2.0)
+
+DEPENDENCIES:
+  - AEXML
+  - Alamofire
+  - IQKeyboardManager
+  - SwiftSignatureView
+
+SPEC REPOS:
+  trunk:
+    - AEXML
+    - Alamofire
+    - IQKeyboardManager
+    - SwiftSignatureView
+
+SPEC CHECKSUMS:
+  AEXML: 2fbb73d8724797ed2cde888731e176fa4d44dd83
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  SwiftSignatureView: cd8cca297cc2ca6a6c174da22fb908c33d03d3c0
+
+PODFILE CHECKSUM: 12166125c2f51ebf6409aa7afcb1b59bc76012eb
+
+COCOAPODS: 1.10.0
