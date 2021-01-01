@@ -27,6 +27,8 @@
 		EF5A5076259E355800310840 /* SwiftSignatureView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5A5075259E355800310840 /* SwiftSignatureView.framework */; };
 		EF5A5078259E355C00310840 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5A5077259E355C00310840 /* Alamofire.framework */; };
 		EF5A507A259E355F00310840 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5A5079259E355F00310840 /* AEXML.framework */; };
+		EF5A508D259E845000310840 /* ProfOfDeliveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A508C259E845000310840 /* ProfOfDeliveryVC.swift */; };
+		EF5A509D259E96E000310840 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A509C259E96E000310840 /* PhotoCollectionViewCell.swift */; };
 		EF9B8F9C259D0A87002B6DE4 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B8F9B259D0A87002B6DE4 /* CurveView.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		EF5A5075259E355800310840 /* SwiftSignatureView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftSignatureView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5A5077259E355C00310840 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5A5079259E355F00310840 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5A508C259E845000310840 /* ProfOfDeliveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfOfDeliveryVC.swift; sourceTree = "<group>"; };
+		EF5A509C259E96E000310840 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF9B8F9B259D0A87002B6DE4 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +191,7 @@
 		EF4BB7FA259CF54000867B95 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF5A508B259E842700310840 /* Prof Of Delivery */,
 				EF5A5061259DC44600310840 /* Signature */,
 				EF5A5058259DB55400310840 /* SideMenu */,
 				EF5A503E259D88A400310840 /* JobSummary */,
@@ -253,6 +258,15 @@
 				EF5A5065259DC4AC00310840 /* SignatureVC.swift */,
 			);
 			path = Signature;
+			sourceTree = "<group>";
+		};
+		EF5A508B259E842700310840 /* Prof Of Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A508C259E845000310840 /* ProfOfDeliveryVC.swift */,
+				EF5A509C259E96E000310840 /* PhotoCollectionViewCell.swift */,
+			);
+			path = "Prof Of Delivery";
 			sourceTree = "<group>";
 		};
 		EFD111AE259D84F9003DB943 /* Util */ = {
@@ -442,12 +456,14 @@
 			files = (
 				EF9B8F9C259D0A87002B6DE4 /* CurveView.swift in Sources */,
 				EF4BB81B259D079900867B95 /* AssignJobVC.swift in Sources */,
+				EF5A508D259E845000310840 /* ProfOfDeliveryVC.swift in Sources */,
 				EF5A5066259DC4AC00310840 /* SignatureVC.swift in Sources */,
 				EF4BB7CC259CDBD300867B95 /* ViewController.swift in Sources */,
 				EF4BB7C8259CDBD300867B95 /* AppDelegate.swift in Sources */,
 				EF4BB800259CF5DE00867B95 /* LoginVC.swift in Sources */,
 				EF5A505A259DB57800310840 /* SideMenuVC.swift in Sources */,
 				EF5A5040259D892E00310840 /* JobSummaryVC.swift in Sources */,
+				EF5A509D259E96E000310840 /* PhotoCollectionViewCell.swift in Sources */,
 				EF4BB7CA259CDBD300867B95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
