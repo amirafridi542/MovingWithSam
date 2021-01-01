@@ -10,6 +10,7 @@
 		446231CB435A519D53AFC113 /* Pods_Moving_With_Sam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBC5CEB7D0CB8B3FDE1A795 /* Pods_Moving_With_Sam.framework */; };
 		EF168F2A259F083300170BDD /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F29259F083300170BDD /* ItemTableViewCell.swift */; };
 		EF168F32259F450500170BDD /* DetailJobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F31259F450500170BDD /* DetailJobVC.swift */; };
+		EF168F3A259F4C2400170BDD /* DummyVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F39259F4C2400170BDD /* DummyVC1.swift */; };
 		EF4BB7C8259CDBD300867B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7C7259CDBD300867B95 /* AppDelegate.swift */; };
 		EF4BB7CA259CDBD300867B95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7C9259CDBD300867B95 /* SceneDelegate.swift */; };
 		EF4BB7CC259CDBD300867B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7CB259CDBD300867B95 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		B8B94721534350E7751321BD /* Pods-Moving With Sam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moving With Sam.release.xcconfig"; path = "Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam.release.xcconfig"; sourceTree = "<group>"; };
 		EF168F29259F083300170BDD /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF168F31259F450500170BDD /* DetailJobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJobVC.swift; sourceTree = "<group>"; };
+		EF168F39259F4C2400170BDD /* DummyVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC1.swift; sourceTree = "<group>"; };
 		EF4BB7C4259CDBD300867B95 /* Moving With Sam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moving With Sam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BB7C7259CDBD300867B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF4BB7C9259CDBD300867B95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				EF5A503E259D88A400310840 /* JobSummary */,
 				EF4BB816259D05E000867B95 /* Assign job */,
 				EF4BB7FB259CF54900867B95 /* Login */,
+				EF168F39259F4C2400170BDD /* DummyVC1.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				EF4BB800259CF5DE00867B95 /* LoginVC.swift in Sources */,
 				EF5A505A259DB57800310840 /* SideMenuVC.swift in Sources */,
 				EF5A5040259D892E00310840 /* JobSummaryVC.swift in Sources */,
+				EF168F3A259F4C2400170BDD /* DummyVC1.swift in Sources */,
 				EF5A509D259E96E000310840 /* PhotoCollectionViewCell.swift in Sources */,
 				EF4BB7CA259CDBD300867B95 /* SceneDelegate.swift in Sources */,
 			);
