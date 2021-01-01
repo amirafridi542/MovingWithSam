@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "TRUCK.png",
+      "filename" : "CLOUD.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "TRUCK-2.png",
+      "filename" : "CLOUD-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "TRUCK-3.png",
+      "filename" : "CLOUD-3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

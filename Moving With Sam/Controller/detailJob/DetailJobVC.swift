@@ -16,11 +16,7 @@ class DetailJobVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     @IBOutlet weak var startJobView : UIView!
     @IBOutlet weak var addPODView : UIView!
     @IBOutlet weak var cancelJobView : UIView!
-
     @IBOutlet weak var cancelAddJobView : UIView!
-
-    
-    
     @IBOutlet weak var itemTableView : UITableView!
 
     
@@ -33,7 +29,7 @@ class DetailJobVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         itemTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
+    // MARK:- Rounding View
 func roundingView()
 {
     deilverView.layer.cornerRadius = 10.0
@@ -42,7 +38,6 @@ func roundingView()
     startJobView.layer.cornerRadius = self.startJobView.frame.size.height / 2
     startJobView.clipsToBounds = true
 
-    
     addPODView.layer.cornerRadius = self.addPODView.frame.size.height / 2
     addPODView.clipsToBounds = true
     

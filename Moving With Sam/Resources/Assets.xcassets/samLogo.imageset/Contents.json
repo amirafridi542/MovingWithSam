@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "TRUCK.png",
+      "filename" : "sams-logo-colored 1-3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "TRUCK-2.png",
+      "filename" : "sams-logo-colored 1-4.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "TRUCK-3.png",
+      "filename" : "sams-logo.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
