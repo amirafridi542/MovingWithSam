@@ -73,6 +73,8 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"PhotoCollectionViewCell", for: indexPath)
+        
+        
         return cell
     }
     

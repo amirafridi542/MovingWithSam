@@ -9,4 +9,9 @@ import UIKit
 
 class AssignJobCollectionCell: UICollectionViewCell {
     
+    @IBOutlet weak var contentSubView : UIView!
+    @IBOutlet weak var timeLbl : UILabel!
+    @IBOutlet weak var statusLbl : UILabel!
+
+    
 }

@@ -34,6 +34,7 @@
 		EF5A508D259E845000310840 /* ProfOfDeliveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A508C259E845000310840 /* ProfOfDeliveryVC.swift */; };
 		EF5A509D259E96E000310840 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A509C259E96E000310840 /* PhotoCollectionViewCell.swift */; };
 		EF9B8F9C259D0A87002B6DE4 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B8F9B259D0A87002B6DE4 /* CurveView.swift */; };
+		EFABEDB625A0C8F700ECF1DB /* JobCollectionViewFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFABEDB525A0C8F700ECF1DB /* JobCollectionViewFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		EF5A508C259E845000310840 /* ProfOfDeliveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfOfDeliveryVC.swift; sourceTree = "<group>"; };
 		EF5A509C259E96E000310840 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF9B8F9B259D0A87002B6DE4 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
+		EFABEDB525A0C8F700ECF1DB /* JobCollectionViewFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCollectionViewFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 			children = (
 				EF4BB81A259D079900867B95 /* AssignJobVC.swift */,
 				EF4A0C8025A0201B00707478 /* AssignJobCollectionCell.swift */,
+				EFABEDB525A0C8F700ECF1DB /* JobCollectionViewFlow.swift */,
 			);
 			path = "Assign job";
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFABEDB625A0C8F700ECF1DB /* JobCollectionViewFlow.swift in Sources */,
 				EF9B8F9C259D0A87002B6DE4 /* CurveView.swift in Sources */,
 				EF168F32259F450500170BDD /* DetailJobVC.swift in Sources */,
 				EF4BB81B259D079900867B95 /* AssignJobVC.swift in Sources */,
