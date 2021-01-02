@@ -11,6 +11,7 @@
 		EF168F2A259F083300170BDD /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F29259F083300170BDD /* ItemTableViewCell.swift */; };
 		EF168F32259F450500170BDD /* DetailJobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F31259F450500170BDD /* DetailJobVC.swift */; };
 		EF168F3A259F4C2400170BDD /* DummyVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F39259F4C2400170BDD /* DummyVC1.swift */; };
+		EF4A0C8125A0201B00707478 /* AssignJobCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A0C8025A0201B00707478 /* AssignJobCollectionCell.swift */; };
 		EF4BB7C8259CDBD300867B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7C7259CDBD300867B95 /* AppDelegate.swift */; };
 		EF4BB7CA259CDBD300867B95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7C9259CDBD300867B95 /* SceneDelegate.swift */; };
 		EF4BB7CC259CDBD300867B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB7CB259CDBD300867B95 /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		EF168F29259F083300170BDD /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF168F31259F450500170BDD /* DetailJobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJobVC.swift; sourceTree = "<group>"; };
 		EF168F39259F4C2400170BDD /* DummyVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC1.swift; sourceTree = "<group>"; };
+		EF4A0C8025A0201B00707478 /* AssignJobCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignJobCollectionCell.swift; sourceTree = "<group>"; };
 		EF4BB7C4259CDBD300867B95 /* Moving With Sam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moving With Sam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BB7C7259CDBD300867B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF4BB7C9259CDBD300867B95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				EF4BB81A259D079900867B95 /* AssignJobVC.swift */,
+				EF4A0C8025A0201B00707478 /* AssignJobCollectionCell.swift */,
 			);
 			path = "Assign job";
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				EF4BB7C8259CDBD300867B95 /* AppDelegate.swift in Sources */,
 				EF4BB800259CF5DE00867B95 /* LoginVC.swift in Sources */,
 				EF5A505A259DB57800310840 /* SideMenuVC.swift in Sources */,
+				EF4A0C8125A0201B00707478 /* AssignJobCollectionCell.swift in Sources */,
 				EF5A5040259D892E00310840 /* JobSummaryVC.swift in Sources */,
 				EF168F3A259F4C2400170BDD /* DummyVC1.swift in Sources */,
 				EF5A509D259E96E000310840 /* PhotoCollectionViewCell.swift in Sources */,

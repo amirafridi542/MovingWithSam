@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Vector-18 copy 2.png",
+      "filename" : "codicon_bell-dot-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Vector-18 copy.png",
+      "filename" : "codicon_bell-dot-3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Vector-18.png",
+      "filename" : "codicon_bell-dot.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
