@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
   
     
 
@@ -20,6 +20,10 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
     @IBOutlet weak var addPodBtnView: UIView!
     @IBOutlet weak var addSignatureBtnView: UIView!
     
+    
+
+    var imagePicker : UIImagePickerController = UIImagePickerController()
+
     
     var photoLargeView: UIView = {
         var view = UIView()
@@ -39,10 +43,12 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.imagePicker.delegate = self
 
         roundingViews()
-        
-        showLockAlertView()
+                        
+        photoCollectionView.delegate = self
+        photoCollectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
@@ -66,6 +72,18 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
         self.addPodBtnView.clipsToBounds = true
     }
     
+    
+    @IBAction func addPODImage(_ sender: Any)
+    {
+        self.showPhotoGalleryAlertView()
+    }
+    
+    
+    @IBAction func addingCustomerSignature(_ sender: Any)
+    {
+        //self.add
+    }
+    
 // MARK : - Collection Delegate Method
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
@@ -84,7 +102,7 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
     
     
     // MARK: - AlertView
-    private func showLockAlertView()
+    private func showPhotoGalleryAlertView()
     {
         self.view.addSubview(photoLargeView)
         self.view.bringSubviewToFront(photoLargeView)
@@ -92,16 +110,21 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
         photoLargeView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0).isActive = true
         photoLargeView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true
         photoLargeView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
+        
+
+        
         view.addSubview(self.photoLargeView)
         self.photoLargeView.addSubview(photoAlertSubView)
+
         
-        photoAlertSubView.backgroundColor = UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1.00)
-        photoAlertSubView.translatesAutoresizingMaskIntoConstraints = false
+        photoAlertSubView.backgroundColor = UIColor.white;  photoAlertSubView.translatesAutoresizingMaskIntoConstraints = false
         photoAlertSubView.leadingAnchor.constraint(equalTo: photoLargeView.leadingAnchor, constant: 30).isActive =  true
         photoAlertSubView.trailingAnchor.constraint(equalTo: photoLargeView.trailingAnchor, constant: -30).isActive =  true
         photoAlertSubView.centerYAnchor.constraint(equalTo: photoLargeView.centerYAnchor).isActive = true
         photoAlertSubView.heightAnchor.constraint(equalToConstant: 200.0).isActive = true
         photoAlertSubView.layer.cornerRadius = 10
+        
+
         
         let crossBtn  = UIButton()
         crossBtn.translatesAutoresizingMaskIntoConstraints = false
@@ -112,8 +135,8 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
         
         crossBtn.trailingAnchor.constraint(equalTo: photoAlertSubView.trailingAnchor, constant: -24).isActive =  true
         crossBtn.topAnchor.constraint(equalTo: photoAlertSubView.topAnchor, constant: 16).isActive = true
-        crossBtn.widthAnchor.constraint(equalToConstant: 49).isActive = true
-        crossBtn.heightAnchor.constraint(equalToConstant: 52).isActive = true
+        crossBtn.widthAnchor.constraint(equalToConstant: 39).isActive = true
+        crossBtn.heightAnchor.constraint(equalToConstant: 42).isActive = true
         
         
         let cameraBtn  = UIButton()
@@ -131,7 +154,7 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
         
         let takePhotoBtn  = UIButton()
         takePhotoBtn.translatesAutoresizingMaskIntoConstraints = false
-        takePhotoBtn.addTarget(self, action: #selector(hidePhotoAlertView), for:.touchUpInside)
+        takePhotoBtn.addTarget(self, action: #selector(openCamera), for:.touchUpInside)
         takePhotoBtn.titleLabel?.font =  UIFont(name:"Poppins-Regular", size: 14)
         takePhotoBtn.setTitleColor(UIColor(red:0.00, green:0.00, blue:0.00, alpha:1.0), for: UIControl.State.normal)
         takePhotoBtn.setTitle("Take Photo", for: UIControl.State.normal)
@@ -173,7 +196,7 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
 
         let chooseGalleryBtn  = UIButton()
         chooseGalleryBtn.translatesAutoresizingMaskIntoConstraints = false
-        chooseGalleryBtn.addTarget(self, action: #selector(hidePhotoAlertView), for:.touchUpInside)
+        chooseGalleryBtn.addTarget(self, action: #selector(openPhotoLibrary), for:.touchUpInside)
         chooseGalleryBtn.titleLabel?.font =  UIFont(name:"Poppins-Regular", size: 14)
         chooseGalleryBtn.setTitleColor(UIColor(red:0.00, green:0.00, blue:0.00, alpha:1.0), for: UIControl.State.normal)
         chooseGalleryBtn.setTitle("Choose from gallery", for: UIControl.State.normal)
@@ -187,7 +210,46 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
 
         
     }
+   
+    @objc func openCamera()
+    {
+        self.imagePicker.allowsEditing = false
+        self.imagePicker.sourceType = .camera
+        self.imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .camera)!
+        present(self.imagePicker, animated: true, completion: nil)
+    }
+   @objc func openPhotoLibrary()
+    {
+        self.imagePicker.allowsEditing = false
+        self.imagePicker.sourceType = .photoLibrary
+        self.imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        present(self.imagePicker, animated: true, completion: nil)
+    }
+    // MARK: - Camera Delegate Method
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        dismiss(animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    {
+        
+        
+            var selectedImage: UIImage?
+            if let editedImage = info[.editedImage] as? UIImage {
+                selectedImage = editedImage
+               // profileImgView.image = selectedImage
+               // userImage = selectedImage
+                //self.profileImage.image = selectedImage!
+                picker.dismiss(animated: true, completion: nil)
+            } else if let originalImage = info[.originalImage] as? UIImage {
+                selectedImage = originalImage
+                
+                picker.dismiss(animated: true, completion: nil)
+            }
+       
+        } // end method
     
+
     @objc func hidePhotoAlertView()
     {
         self.photoLargeView.removeFromSuperview()
@@ -203,3 +265,6 @@ class ProfOfDeliveryVC: UIViewController, UICollectionViewDelegate, UICollection
     
     
 }  // end class
+
+
+   
