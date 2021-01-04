@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "bx_bx-phone-call copy 2.png",
+      "filename" : "bx_bx-phone-call-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "bx_bx-phone-call copy.png",
+      "filename" : "bx_bx-phone-call-3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "bx_bx-phone-call.png",
+      "filename" : "bx_bx-phone-call-4.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

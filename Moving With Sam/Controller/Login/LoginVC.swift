@@ -13,6 +13,12 @@ class LoginVC: UIViewController {
     @IBOutlet weak var loginView : UIView!
 
     
+    @IBOutlet weak var emailTxtField : UITextField!
+    @IBOutlet weak var passwordTxtField : UITextField!
+
+    @IBOutlet weak var passwordGoodImgView : UIImageView!
+    @IBOutlet weak var emailGoodImgView : UIImageView!
+
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,4 +32,5 @@ class LoginVC: UIViewController {
     
 
 
-}
+}  // end class
+

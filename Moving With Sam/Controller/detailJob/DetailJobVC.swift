@@ -20,6 +20,10 @@ class DetailJobVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     @IBOutlet weak var itemTableView : UITableView!
 
     
+    @IBOutlet weak var statusLbl : UILabel!
+    @IBOutlet weak var timeLbl : UILabel!
+
+    
     // MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
