@@ -947,7 +947,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Prof of Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKO-Lj-uuo">
-                                        <rect key="frame" x="120" y="6.5" width="174.5" height="31"/>
+                                        <rect key="frame" x="129" y="9" width="156.5" height="26"/>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
