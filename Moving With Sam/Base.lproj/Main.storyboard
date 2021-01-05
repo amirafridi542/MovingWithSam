@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uhj-1r-9KZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s89-mZ-KuL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -948,7 +948,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Prof of Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKO-Lj-uuo">
-                                        <rect key="frame" x="129" y="9" width="156.5" height="26"/>
+                                        <rect key="frame" x="120" y="6.5" width="174.5" height="31"/>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1431,6 +1431,9 @@
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="userSigning:" destination="0hu-pI-ckk" eventType="touchUpInside" id="hWw-HE-vGL"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.36078431372549019" green="0.70980392156862748" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
@@ -1484,6 +1487,7 @@
                             <constraint firstItem="xbB-vQ-yYw" firstAttribute="width" secondItem="0yl-6T-5ln" secondAttribute="width" multiplier="0.6" id="wWU-80-T4m"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wKh-gR-XwE"/>
                     <connections>
                         <outlet property="emailGoodImgView" destination="nlo-Kf-7mb" id="Vyk-S2-Vr1"/>
                         <outlet property="emailTxtField" destination="2NL-Bn-40T" id="aMh-yz-UFP"/>
@@ -1494,7 +1498,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNF-Q5-Apd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789" y="103"/>
+            <point key="canvasLocation" x="1370" y="-27"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="zUA-eS-fF6">
+            <objects>
+                <viewController storyboardIdentifier="SWRevealViewController" id="tmS-5X-KHS" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GvJ-iw-dtO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Dkh-0K-ovo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="2XN-MV-2Wl" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="OUx-ta-IKF"/>
+                        <segue destination="s89-mZ-KuL" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="c7h-zd-6oL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7V-Gk-ZBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395.6521739130435" y="-485.49107142857139"/>
         </scene>
         <!--Assign JobVC-->
         <scene sceneID="3qu-Om-lnk">
@@ -1718,6 +1741,7 @@
                     <connections>
                         <outlet property="assignCollectionView" destination="uam-NQ-PVL" id="OZ3-vy-M6K"/>
                         <outlet property="curveView" destination="XXg-a1-UCg" id="wmK-om-elH"/>
+                        <outlet property="menuBtn" destination="HBY-Lx-BzR" id="yXk-PC-8py"/>
                         <outlet property="searchView" destination="T8J-xe-JqC" id="dQn-XQ-bKC"/>
                         <outlet property="topView" destination="wvl-Hs-KGe" id="jqT-on-ZWN"/>
                     </connections>
@@ -1939,7 +1963,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1Y-2V-IV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873.913043478261" y="218.97321428571428"/>
+            <point key="canvasLocation" x="281" y="410"/>
         </scene>
         <!--SignatureVC-->
         <scene sceneID="cKJ-gc-Sye">
@@ -2044,7 +2068,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vM-LJ-MBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2873.913043478261" y="-237.05357142857142"/>
+            <point key="canvasLocation" x="3784.057971014493" y="-237.05357142857142"/>
         </scene>
         <!--Cancel JobVC-->
         <scene sceneID="k0N-1d-x8k">
@@ -2327,7 +2351,7 @@
                 </view>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h88-zp-VXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3747.826086956522" y="-462.05357142857139"/>
+            <point key="canvasLocation" x="4657.971014492754" y="-462.05357142857139"/>
         </scene>
         <!--Side MenuVC-->
         <scene sceneID="jaY-Ud-evH">
@@ -2375,7 +2399,7 @@
                                         <state key="normal" backgroundImage="sideMenu"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B4-cK-HTc">
-                                        <rect key="frame" x="65" y="7.5" width="329" height="29"/>
+                                        <rect key="frame" x="65" y="6" width="329" height="32"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                         <state key="normal" title="Job Summary">
                                             <color key="titleColor" red="0.10196078431372549" green="0.098039215686274508" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
@@ -2402,7 +2426,7 @@
                                         <state key="normal" backgroundImage="logout"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z9-FW-RVE">
-                                        <rect key="frame" x="76" y="7.5" width="318" height="29"/>
+                                        <rect key="frame" x="76" y="6" width="318" height="32"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                         <state key="normal" title="Logout">
                                             <color key="titleColor" red="0.1019607843" green="0.098039215690000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -2439,6 +2463,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9z-F7-WSQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2598" y="335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="55Q-Ez-WoV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="s89-mZ-KuL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ypR-eL-CZb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0hu-pI-ckk" kind="relationship" relationship="rootViewController" id="8Md-Hm-s8f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ly-qo-P7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.73913043478262" y="-595.3125"/>
         </scene>
     </scenes>
     <resources>

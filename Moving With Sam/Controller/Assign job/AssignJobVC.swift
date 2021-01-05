@@ -11,8 +11,10 @@ class AssignJobVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     
     @IBOutlet weak var curveView : UIView!
     @IBOutlet weak var searchView : UIView!
-    @IBOutlet weak var topView : UIView!
+    
+    @IBOutlet weak var menuBtn : UIButton!
 
+    @IBOutlet weak var topView : UIView!
     @IBOutlet weak var assignCollectionView : UICollectionView!
 
     // MARK: - View Life Cycle
@@ -34,9 +36,6 @@ class AssignJobVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         
         let defultt = UserDefaults.standard
         defultt.set(collectionWidth, forKey: "collectionWidth")
-        
-      //  curveView.roundCorners(corners: [.topLeft, .topRight], radius: 3.0)
-        
         let layOutt = self.assignCollectionView.collectionViewLayout as! JobCollectionViewFlow
 
         layOutt.scrollDirection = .vertical
@@ -45,9 +44,18 @@ class AssignJobVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         topView.bringSubviewToFront(searchView)
         assignCollectionView.delegate = self
         assignCollectionView.dataSource = self
+        
+        
+        
+        //self.menuBtn.target = self.revealViewController()
+        //self.menuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
 
+
+        self.menuBtn.addTarget(self.revealViewController(), action:#selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
+    
+    
     
     
     // MARK : - Collection Delegate Method
@@ -57,12 +65,6 @@ class AssignJobVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"AssignJobCollectionCell", for: indexPath) as! AssignJobCollectionCell
-            
-           
-            //cell.contentSubView.dropShadow()
-            //cell.contentSubView.layer.shadowOffset = .zero
-            //cell.contentSubView.layer.shadowRadius = 6
-            
             cell.contentSubView.layer.shadowColor = UIColor.lightGray.cgColor
             cell.contentSubView.layer.shadowOpacity = 0.6
             cell.contentSubView.layer.shadowOffset = CGSize.zero

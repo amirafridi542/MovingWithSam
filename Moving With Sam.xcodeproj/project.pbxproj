@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		446231CB435A519D53AFC113 /* Pods_Moving_With_Sam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBC5CEB7D0CB8B3FDE1A795 /* Pods_Moving_With_Sam.framework */; };
+		EF0748D825A449D20080D88F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0748D625A449D20080D88F /* SWRevealViewController.m */; };
 		EF168F2A259F083300170BDD /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F29259F083300170BDD /* ItemTableViewCell.swift */; };
 		EF168F32259F450500170BDD /* DetailJobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F31259F450500170BDD /* DetailJobVC.swift */; };
 		EF168F3A259F4C2400170BDD /* DummyVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168F39259F4C2400170BDD /* DummyVC1.swift */; };
@@ -59,6 +60,9 @@
 		1CBC5CEB7D0CB8B3FDE1A795 /* Pods_Moving_With_Sam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moving_With_Sam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D287F22D155842498B8EC48 /* Pods-Moving With Sam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moving With Sam.debug.xcconfig"; path = "Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam.debug.xcconfig"; sourceTree = "<group>"; };
 		B8B94721534350E7751321BD /* Pods-Moving With Sam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moving With Sam.release.xcconfig"; path = "Target Support Files/Pods-Moving With Sam/Pods-Moving With Sam.release.xcconfig"; sourceTree = "<group>"; };
+		EF0748D525A449D10080D88F /* Moving With Sam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moving With Sam-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF0748D625A449D20080D88F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EF0748D725A449D20080D88F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EF168F29259F083300170BDD /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF168F31259F450500170BDD /* DetailJobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJobVC.swift; sourceTree = "<group>"; };
 		EF168F39259F4C2400170BDD /* DummyVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC1.swift; sourceTree = "<group>"; };
@@ -144,6 +148,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF0748D425A449BE0080D88F /* SwRevealViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				EF0748D725A449D20080D88F /* SWRevealViewController.h */,
+				EF0748D625A449D20080D88F /* SWRevealViewController.m */,
+			);
+			path = SwRevealViewControler;
+			sourceTree = "<group>";
+		};
 		EF168F18259EFB5B00170BDD /* detailJob */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +233,7 @@
 		EF4BB7FA259CF54000867B95 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF0748D425A449BE0080D88F /* SwRevealViewControler */,
 				EF3FD27C25A30C9400A96551 /* CancelJobVC */,
 				EF168F18259EFB5B00170BDD /* detailJob */,
 				EF5A508B259E842700310840 /* Prof Of Delivery */,
@@ -244,6 +258,7 @@
 		EF4BB804259CF77700867B95 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EF0748D525A449D10080D88F /* Moving With Sam-Bridging-Header.h */,
 				EF4BB806259CF7AA00867B95 /* Font */,
 				EF4BB7D0259CDBD800867B95 /* Assets.xcassets */,
 			);
@@ -380,6 +395,7 @@
 				TargetAttributes = {
 					EF4BB7C3259CDBD300867B95 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					EF4BB7D9259CDBD900867B95 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -493,6 +509,7 @@
 				EF168F32259F450500170BDD /* DetailJobVC.swift in Sources */,
 				EF4BB81B259D079900867B95 /* AssignJobVC.swift in Sources */,
 				EF5A508D259E845000310840 /* ProfOfDeliveryVC.swift in Sources */,
+				EF0748D825A449D20080D88F /* SWRevealViewController.m in Sources */,
 				EF5A5066259DC4AC00310840 /* SignatureVC.swift in Sources */,
 				EF4BB7CC259CDBD300867B95 /* ViewController.swift in Sources */,
 				EF168F2A259F083300170BDD /* ItemTableViewCell.swift in Sources */,
@@ -681,6 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Moving With Sam/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -690,6 +708,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "amir.Moving-With-Sam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/amirkhan/Desktop/Square/Moving With Sam/Moving With Sam/Resources/Moving With Sam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -701,6 +721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Moving With Sam/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -710,6 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "amir.Moving-With-Sam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/amirkhan/Desktop/Square/Moving With Sam/Moving With Sam/Resources/Moving With Sam-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
