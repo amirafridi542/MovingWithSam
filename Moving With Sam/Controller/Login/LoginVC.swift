@@ -37,6 +37,7 @@ class LoginVC: UIViewController {
             let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "AssignJobVC") as! AssignJobVC
 
                let navigationController = UINavigationController(rootViewController: destinationController)
+        navigationController.navigationBar.isHidden = true
                sw.pushFrontViewController(navigationController, animated: true)
         
     }
